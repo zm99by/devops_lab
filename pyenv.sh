@@ -12,7 +12,7 @@ pyenv install 2.7.0
 
 sudo yum update -y
 sudo yum install -y python3-pip
-sudo  pip install virtualenv
+sudo pip install virtualenv
 sudo yum install -y python-virtualenv
 
 exec $SHELL
