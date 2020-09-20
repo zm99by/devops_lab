@@ -10,7 +10,7 @@ source ~/.bashrc
 pyenv install 3.7.0
 pyenv install 2.7.0
 
-#sudo yum update -y
+sudo yum update -y
 sudo yum install -y python3-pip
 sudo  pip install virtualenv
 sudo yum install -y python-virtualenv
