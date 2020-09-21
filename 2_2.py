@@ -1,10 +1,8 @@
-f = int(input("Input integer"))
+n = int(input("input integer"))
 
+factorial = 1
+while n > 1:
+    factorial *= n
+    n -= 1
 
-def fac(n):
-    if n == 0:
-        return 1
-    return fac(n - 1) * n
-
-
-print("#Example: ", fac(f))
+print(factorial)
