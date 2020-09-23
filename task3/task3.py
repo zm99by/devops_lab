@@ -18,7 +18,7 @@ class task3:
             l1 = str(psutil.cpu_times()[2])
             l2 = str(psutil.disk_usage('/')[1])
             l3 = str(psutil.virtual_memory()[3])
-            ar_txt = "SNAPSHOT:" + ln + " Date:" + l0 + " SysCPU:" + l1 + " Mem:" + l2 + " VMem:" + l3
+            ar_txt = "SNAPSHOT:" + ln + " Date:" + l0 + " CPU:" + l1 + " Mem:" + l2 + " VM:" + l3
             with open(outfile, "a") as file:
                 file.write(ar_txt + "\n")
             file.close()
@@ -35,9 +35,9 @@ class task3:
             ar_json = {
                 'SNAPSHOT': str(count),
                 'Date': str(time.asctime()),
-                'System CPU': str(l1[2]),
-                'Memory': str(l2[1]),
-                'Vmemory': str(l3[3])
+                'CPU': str(l1[2]),
+                'Mem': str(l2[1]),
+                'Vm': str(l3[3])
             }
             with open(outfile, "a") as f_json:
                 f_json.write(json.dumps(ar_json) + "\n")
