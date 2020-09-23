@@ -1,0 +1,13 @@
+apache_vhosts:
+- ip_address: "*"
+  port: 80
+  servername: "www.zm99.net"
+  documentroot: "/var/www/zm99net"
+  serveradmin: "www-zm99by@foo.example.com"
+  directorypath: '"/usr/local/httpd/htdocs"'
+- ip_address: "localhost"
+  port: 443
+  servername: "www.ololo.com"
+  documentroot: "/var/www/ololo"
+  serveradmin: "none.com"
+  directorypath: '"/usr/local/httpd/htdocs"'
