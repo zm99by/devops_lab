@@ -5,7 +5,7 @@ setup(
     packages=find_packages(),
     entry_points={
         "console_scripts": [
-            "task3 = task3.task3",
+            "snapshot = task3.task3",
         ],
     },
     install_requires=[
