@@ -26,7 +26,7 @@ def get_pulls(state):
             arr = []
             for x in range(len(data)):
                 if data[x]["labels"] and data[x]["labels"][0]["name"] == state:
-                    arr.append({"num": data[x]["number"], "title": data[x]["html_url"], "link": data[x]["title"]})
+                    arr.append({"num": data[x]["number"], "title": data[x]["title"], "link": data[x]["html_url"]})
                     x += 1
             return arr
         else:
