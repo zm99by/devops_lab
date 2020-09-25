@@ -1,7 +1,7 @@
 import requests
 
 auth = 'your@gmail.com'
-passwd = 'yourpaswd'
+passwd = 'yourpawd!'
 url = 'https://api.github.com/repos/alenaPy/devops_lab/pulls'
 
 
@@ -12,7 +12,8 @@ def get_request(params):
 def get_d(d):
     arr = []
     for x in range(len(d)):
-        arr.append({"num": d[x]["number"], "title": d[x]["title"], "link": d[x]["html_url"]})
+        t = {"num": d[x]["number"], "title": d[x]["title"], "link": d[x]["html_url"]}
+        arr.append(t)
         x += 1
     return arr
 
@@ -25,8 +26,9 @@ def get_pulls(state):
         if state == 'accepted' or state == 'needs work':
             arr = []
             for x in range(len(d)):
+                t = {"num": d[x]["number"], "title": d[x]["title"], "link": d[x]["html_url"]}
                 if d[x]["labels"] and d[x]["labels"][0]["name"] == state:
-                    arr.append({"num": d[x]["number"], "title": d[x]["title"], "link": d[x]["html_url"]})
+                    arr.append(t)
                     x += 1
             return arr
         else:
