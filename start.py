@@ -2,7 +2,9 @@ import requests
 from flask import Flask, render_template, request
 from handlers.pulls import get_pulls
 
+
 app = Flask(__name__)
+
 
 @app.route('/')
 def hello():
