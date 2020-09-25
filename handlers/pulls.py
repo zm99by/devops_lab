@@ -2,8 +2,6 @@ import requests
 
 auth = 'your@gmail.com'
 passwd = 'your_pass'
-
-
 url = 'https://api.github.com/repos/alenaPy/devops_lab/pulls'
 
 
