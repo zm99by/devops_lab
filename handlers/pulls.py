@@ -8,6 +8,7 @@ url = 'https://api.github.com/repos/alenaPy/devops_lab/pulls'
 def get_request(params):
     return requests.get(url, auth=(auth, passwd), params=params).json()
 
+
 def get_d(d):
     arr = []
     for x in range(len(d)):
@@ -32,4 +33,3 @@ def get_pulls(state):
             return arr
         else:
             return get_d(d)
-
