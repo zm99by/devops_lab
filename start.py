@@ -10,6 +10,7 @@ app = Flask(__name__)
 def hello():
     return 'Hello, World!'
 
+
 @app.route('/pulls')
 def pulls():
     state = request.args.get("state")
