@@ -15,4 +15,6 @@ def hello():
 def pulls():
     state = request.args.get("state")
     return render_template("pulls.j2", pulls=get_pulls(state))
+
+
 app.run()
