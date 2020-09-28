@@ -3,6 +3,7 @@ For before install module:
 
 pip install wheel
 python setup.py bdist_wheel
+pip install psutil
 pip install .  
 
 For see help use `task3 -h`
